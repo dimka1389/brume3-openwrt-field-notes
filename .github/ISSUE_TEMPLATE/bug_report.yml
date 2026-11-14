@@ -1,0 +1,42 @@
+name: Bug report / Сообщение об ошибке
+description: A specific, reproducible problem with private details removed / Конкретная проблема без личных данных
+title: "[Test] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Public report / Публичное сообщение.** No configs, backups, subscriptions, keys, IP/MAC addresses or full logs. Read PRIVACY.md. / Не добавляйте конфиги, бэкапы, подписки, ключи, IP/MAC и полные логи. Прочитайте PRIVACY.md.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy review / Проверка конфиденциальности
+      options:
+        - label: I reviewed the text and attachments and removed private information / Я проверил текст и вложения и удалил приватные сведения
+          required: true
+  - type: textarea
+    id: versions
+    attributes:
+      label: Hardware and versions / Модель и версии
+      description: Model, source revision, kernel, relevant package/app versions only / Только модель, ревизия исходников, ядро и версии нужных компонентов
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps, expected and actual result / Шаги, ожидаемый и фактический результат
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Minimal redacted evidence / Минимальные обезличенные наблюдения
+      description: State what was checked and what remains a hypothesis. Do not paste full diagnostic output. / Что проверено, что остаётся гипотезой. Не вставляйте полную диагностику.
+  - type: textarea
+    id: changes
+    attributes:
+      label: Changes and verification / Изменения и проверки
+      description: Include reboot/reconnect/rollback results or say not tested / Укажите результаты перезагрузки, переподключения, отката либо «не проверено»
+  - type: textarea
+    id: upstream
+    attributes:
+      label: Related upstream issue or PR / Связанный issue или PR исходного проекта

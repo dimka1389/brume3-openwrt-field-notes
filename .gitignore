@@ -1,0 +1,14 @@
+# Public documentation only. Add new paths deliberately after privacy review.
+*
+!/.gitignore
+!/README.md
+!/README.ru.md
+!/PRIVACY.md
+!/CONTRIBUTING.md
+!/docs/
+/docs/*
+!/docs/*.md
+!/.github/
+/.github/*
+!/.github/ISSUE_TEMPLATE/
+!/.github/ISSUE_TEMPLATE/*.yml

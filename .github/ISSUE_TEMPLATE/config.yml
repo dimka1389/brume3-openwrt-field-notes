@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and comparisons / Вопросы и сравнение опыта
+    url: https://github.com/dimka1389/brume3-openwrt-field-notes/discussions
+    about: Use Discussions for general questions / Общие вопросы обсуждаем здесь
